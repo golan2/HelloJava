@@ -54,8 +54,8 @@ public abstract class AbsPiece implements Piece {
    * Take into account
    * [1] If the [destination] if it is occupied by opponent then it is Ok
    * [2] If there is any Piece along the way it is a blocker unless {@link #isLeapEnabled()} is true.
-   * @param destination
-   * @return
+   * @param destination the point on board where we want to move this piece
+   * @return if free route or not
    */
   private boolean freeRoutToPoint(Point destination) {
     if (isLeapEnabled()) return true; //like the Knight which doesn't need the "route" to be clear.

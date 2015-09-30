@@ -14,7 +14,7 @@ import java.util.Collection;
  *
  * </pre>
  */
-public abstract class AbsMultiTimer {
+public abstract class AbsMultiTimer implements MultiTimer {
 
 
     protected abstract boolean innerAddTask(MultiTask multiTask);
@@ -26,6 +26,7 @@ public abstract class AbsMultiTimer {
     protected abstract boolean emptyTasksList();
 
 
+    @Override
     public final synchronized void addTask(Runnable task, long timeToWait) {
         Logger.log("addTask - Task was added. timeToWait=[" + timeToWait + "] task=" + task);
 
