@@ -1,8 +1,5 @@
 package collections.stream;
 
-import org.omg.CORBA.NVList;
-import org.omg.CORBA.StringHolder;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -10,13 +7,27 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * Created by golaniz on 03/07/2016.
+ * Play with streams
  */
-public class PlayWithStrams {
+public class PlayWithStreams {
 
     public static void main(String[] args) {
-        fromObjectsListToString();
-        fromMapToString();
+        sortedKeySet();
+//        fromObjectsListToString();
+//        fromMapToString();
+    }
+
+    private static void sortedKeySet() {
+        final HashMap<String, Integer> map = new HashMap<>();
+        map.put("A", 100);
+        map.put("B", 20);
+        map.put("C", 13);
+        map.put("D", 4);
+
+        final List<String> a = map.keySet().stream().sorted().collect(Collectors.toList());
+        for (String s : a) {
+            System.out.println(s);
+        }
     }
 
     private static void fromObjectsListToString() {
@@ -43,7 +54,7 @@ public class PlayWithStrams {
         final int value;
 
 
-        public NameVal(String name, int value) {
+        NameVal(String name, int value) {
             this.name = name;
             this.value = value;
         }
