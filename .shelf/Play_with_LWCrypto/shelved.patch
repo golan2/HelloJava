@@ -1,0 +1,225 @@
+Index: src/main/resources/log4j2.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1255
+===================================================================
+--- src/main/resources/log4j2.properties	(revision )
++++ src/main/resources/log4j2.properties	(revision )
+@@ -0,0 +1,32 @@
++name=PropertiesConfig
++appenders = audit
++
++
++appender.console.type = Console
++appender.console.name = STDOUT
++appender.console.layout.type = PatternLayout
++appender.console.layout.pattern = [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
++
++
++rootLogger.level = debug
++rootLogger.appenderRefs = audit
++
++
++
++#Audit
++appender.audit.type = RollingFile
++appender.audit.name = audit
++appender.audit.fileName = c:/log/audit/auditLog.log
++appender.audit.filePattern = c:/log/audit/$${date:yyyy-MM}/auditLog-%d{yyyy-MM-dd}-%i.log
++appender.audit.layout.type = PatternLayout
++appender.audit.layout.pattern = %d{MM/dd/yyyy HH\:mm\:ss,SSS} | %-5p | [%t] (%F:%L) - %m%n
++appender.audit.policies.type = Policies
++appender.audit.policies.size.type = SizeBasedTriggeringPolicy
++appender.audit.policies.size.size=200KB
++appender.audit.strategy.type = DefaultRolloverStrategy
++appender.audit.strategy.max = 9999999
++
++logger.audit.name = log4j2.play.with.rolling
++logger.audit.level = INFO
++logger.audit.additivity = false
++logger.audit.appenderRef.rolling.ref = audit
+Index: src/main/resources/log4j.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1255
+===================================================================
+--- src/main/resources/log4j.properties	(revision )
++++ src/main/resources/log4j.properties	(revision )
+@@ -0,0 +1,18 @@
++# suppress inspection "UnusedProperty" for whole file
++msg.layout=%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%t] (%F:%L) : %m%n
++
++# Root logger option
++log4j.rootLogger=TRACE, file
++
++
++log4j.appender.console=org.apache.log4j.ConsoleAppender
++log4j.appender.console.layout=org.apache.log4j.PatternLayout
++log4j.appender.console.layout.ConversionPattern=${msg.layout}
++
++# Redirect log messages to a log file, support file rolling.
++log4j.appender.file=org.apache.log4j.RollingFileAppender
++log4j.appender.file.File=C:\\log\\http.client.log
++log4j.appender.file.MaxFileSize=5MB
++log4j.appender.file.MaxBackupIndex=20
++log4j.appender.file.layout=org.apache.log4j.PatternLayout
++log4j.appender.file.layout.ConversionPattern=${msg.layout}
+\ No newline at end of file
+Index: src/main/java/log4j2/play/with/rolling/HelloRolling.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/log4j2/play/with/rolling/HelloRolling.java	(revision )
++++ src/main/java/log4j2/play/with/rolling/HelloRolling.java	(revision )
+@@ -0,0 +1,26 @@
++package log4j2.play.with.rolling;
++
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++
++import java.util.Arrays;
++import java.util.UUID;
++
++public class HelloRolling {
++
++    private static Logger LOGGER = LoggerFactory.getLogger(HelloRolling.class);
++
++
++    public static void main(String[] args) throws InterruptedException {
++        final String uuid = UUID.randomUUID().toString();
++        char[] chars = new char[1024*32];
++        Arrays.fill(chars, '@');
++        final String s = new String(chars);
++        for (int i = 0; i < 15; i++) {
++            System.out.println(i);
++            LOGGER.info(uuid+ " - " + i);
++            LOGGER.info(s);
++            Thread.sleep(100);
++        }
++    }
++}
+Index: src/main/java/golan/izik/log/Logger.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/golan/izik/log/Logger.java	(date 1507005981000)
++++ src/main/java/golan/izik/log/Logger.java	(revision )
+@@ -1,10 +1,11 @@
+ package golan.izik.log;
+ 
+-import java.io.BufferedOutputStream;
+-import java.io.OutputStream;
+-import java.io.PrintStream;
++import org.slf4j.LoggerFactory;
++
+ import java.text.SimpleDateFormat;
+-import java.util.*;
++import java.util.GregorianCalendar;
++import java.util.Locale;
++import java.util.TimeZone;
+ 
+ /**
+ * <pre>
+@@ -24,11 +25,9 @@
+ 
+ 
+     private static String generatePrefix() {
+-        StringBuilder buf = new StringBuilder();
+-        buf.append("[").append(getCurrentDateAndTime()).append("] ");
+-        buf.append("[").append(Thread.currentThread().getName()).append("] ");
+-        buf.append("[").append(getFileNameAndLineNumber()).append("] ");
+-        return  buf.toString();
++        return "[" + getCurrentDateAndTime() + "] " +
++                "[" + Thread.currentThread().getName() + "] " +
++                "[" + getFileNameAndLineNumber() + "] ";
+     }
+ 
+     /**
+@@ -59,7 +58,8 @@
+     }
+ 
+     public static void log(String s) {
+-        System.out.println(generatePrefix() + s);
++        LoggerFactory.getLogger(Logger.class).info(s);
++//        System.out.println(generatePrefix() + s);
+     }
+ 
+     public static void log(Throwable t) {
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- pom.xml	(date 1507005981000)
++++ pom.xml	(revision )
+@@ -8,6 +8,11 @@
+     <artifactId>hello.java</artifactId>
+     <version>1.0-SNAPSHOT</version>
+ 
++    <properties>
++        <slf4j.version>1.7.5</slf4j.version>
++        <log4j2.version>2.8.2</log4j2.version>
++    </properties>
++
+     <dependencies>
+         <dependency>
+             <groupId>org.dspace.xmlui.concurrent</groupId>
+@@ -45,20 +50,47 @@
+             <version>1.0.2</version>
+         </dependency>
+ 
++
++
++
++
++
+         <dependency>
+-            <groupId>junit</groupId>
+-            <artifactId>junit</artifactId>
+-            <version>4.3.1</version>
++            <groupId>org.slf4j</groupId>
++            <artifactId>slf4j-api</artifactId>
++            <version>${slf4j.version}</version>
+         </dependency>
+         <dependency>
+-            <groupId>org.slf4j</groupId>
+-            <artifactId>slf4j-simple</artifactId>
+-            <version>1.7.12</version>
++            <groupId>org.apache.logging.log4j</groupId>
++            <artifactId>log4j-slf4j-impl</artifactId>
++            <version>2.9.1</version>
+         </dependency>
+         <dependency>
+-            <groupId>org.slf4j</groupId>
+-            <artifactId>slf4j-api</artifactId>
+-            <version>1.7.12</version>
++            <groupId>org.apache.logging.log4j</groupId>
++            <artifactId>log4j-core</artifactId>
++            <version>${log4j2.version}</version>
++        </dependency>
++
++
++
++
++        <dependency>
++            <groupId>org.apache.commons</groupId>
++            <artifactId>commons-lang3</artifactId>
++            <version>3.5</version>
++        </dependency>
++        <dependency>
++            <groupId>org.apache.httpcomponents</groupId>
++            <artifactId>httpclient</artifactId>
++            <version>4.5.3</version>
++        </dependency>
++
++
++
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.3.1</version>
+         </dependency>
+     </dependencies>
+     <build>
