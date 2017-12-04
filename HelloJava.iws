@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list id="24c7e296-085a-4dbb-828c-4e3644da625f" name="Play with LWCrypto" comment="" />
     <list default="true" id="f7cec380-fdf0-47c2-b9f5-25396d7fb40d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/interview/trees/MirrorTree.java" />
-      <change beforePath="$PROJECT_DIR$/HelloJava.iml" afterPath="$PROJECT_DIR$/HelloJava.iml" />
-      <change beforePath="$PROJECT_DIR$/HelloJava.ipr" afterPath="$PROJECT_DIR$/HelloJava.ipr" />
       <change beforePath="$PROJECT_DIR$/HelloJava.iws" afterPath="$PROJECT_DIR$/HelloJava.iws" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/interview/trees/MirrorTree.java" afterPath="$PROJECT_DIR$/src/main/java/interview/trees/MirrorTree.java" />
     </list>
     <ignored path="HelloJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,21 +63,18 @@
       <file leaf-file-name="MirrorTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/MirrorTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-              <folding>
-                <element signature="e#908#909#0" expanded="true" />
-                <element signature="e#949#950#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyIntBST.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/MyIntBST.java">
+      <file leaf-file-name="BST.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/BST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="56" selection-end-column="3" />
+            <state relative-caret-position="0">
+              <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -161,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/main/java/interview/lists/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/interview/trees/LowestCommonAncestor.java" />
         <option value="$PROJECT_DIR$/src/main/java/interview/trees/MyIntBST.java" />
-        <option value="$PROJECT_DIR$/src/main/java/interview/trees/BST.java" />
         <option value="$PROJECT_DIR$/src/main/java/interview/trees/KthSmallestInBST.java" />
         <option value="$PROJECT_DIR$/src/main/java/interview/chess/Piece.java" />
         <option value="$PROJECT_DIR$/src/main/java/interview/chess/Chessboard.java" />
@@ -195,6 +189,7 @@
         <option value="$PROJECT_DIR$/src/main/java/interview/BlockingQueue/BlockingQueueMain.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/multithreading/concurrent/HelloCyclicBarrier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/interview/trees/BST.java" />
         <option value="$PROJECT_DIR$/src/main/java/interview/trees/MirrorTree.java" />
       </list>
     </option>
@@ -875,6 +870,14 @@
       <option name="presentableId" value="Default" />
       <updated>1433520560834</updated>
     </task>
+    <task id="LOCAL-00001" summary="MirrorTree">
+      <created>1512338302288</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1512338302288</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -936,7 +939,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40495867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821724" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23361976" sideWeight="0.4938918" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -962,7 +965,8 @@
     <MESSAGE value="Play with LWCrypto" />
     <MESSAGE value="CloseableHttpClient" />
     <MESSAGE value="HelloRolling - Play with log4j2 rolling" />
-    <option name="LAST_COMMIT_MESSAGE" value="HelloRolling - Play with log4j2 rolling" />
+    <MESSAGE value="MirrorTree" />
+    <option name="LAST_COMMIT_MESSAGE" value="MirrorTree" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1298,14 +1302,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/IsBalancedTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/interview/recursion/waze/AbsMazeWaze.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1332,14 +1328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/IsBalancedBST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -1348,30 +1336,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/BST.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/IsBalancedTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="46" column="18" lean-forward="false" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        <state relative-caret-position="308">
+          <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/IsBalancedBST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="39" />
+          <folding>
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/MyIntBST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="56" selection-end-column="3" />
+        <state relative-caret-position="206">
+          <caret line="51" column="53" lean-forward="true" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/BST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/MirrorTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
