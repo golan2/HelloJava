@@ -4,6 +4,7 @@
     <list id="24c7e296-085a-4dbb-828c-4e3644da625f" name="Play with LWCrypto" comment="" />
     <list default="true" id="f7cec380-fdf0-47c2-b9f5-25396d7fb40d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/HelloJava.iws" afterPath="$PROJECT_DIR$/HelloJava.iws" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/interview/trees/IsBalancedTree.java" afterPath="$PROJECT_DIR$/src/main/java/interview/trees/IsBalancedTree.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/interview/trees/MirrorTree.java" afterPath="$PROJECT_DIR$/src/main/java/interview/trees/MirrorTree.java" />
     </list>
     <ignored path="HelloJava.iws" />
@@ -60,11 +61,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MirrorTree.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MirrorTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/MirrorTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="-96">
+              <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IsBalancedTree.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/IsBalancedTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="53" column="15" lean-forward="false" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -191,6 +202,7 @@
         <option value="$PROJECT_DIR$/src/main/java/multithreading/concurrent/HelloCyclicBarrier.java" />
         <option value="$PROJECT_DIR$/src/main/java/interview/trees/BST.java" />
         <option value="$PROJECT_DIR$/src/main/java/interview/trees/MirrorTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/interview/trees/IsBalancedTree.java" />
       </list>
     </option>
   </component>
@@ -360,7 +372,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MirrorTree">
+  <component name="RunManager" selected="Application.IsBalancedTree">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -445,14 +457,14 @@
       <module name="HelloJava" />
       <envs />
     </configuration>
-    <configuration name="MirrorTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="IsBalancedTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="interview.trees.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="interview.trees.MirrorTree" />
+      <option name="MAIN_CLASS_NAME" value="interview.trees.IsBalancedTree" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -464,14 +476,14 @@
       <module name="HelloJava" />
       <envs />
     </configuration>
-    <configuration name="SimpleGeneric" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MirrorTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="generics.*" />
+          <option name="PATTERN" value="interview.trees.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="generics.SimpleGeneric" />
+      <option name="MAIN_CLASS_NAME" value="interview.trees.MirrorTree" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -835,19 +847,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Application.HelloRolling" />
       <item index="1" class="java.lang.String" itemvalue="Remote.mvnDebug" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SimpleGeneric" />
-      <item index="3" class="java.lang.String" itemvalue="Application.CheckReentrantLock" />
-      <item index="4" class="java.lang.String" itemvalue="Application.BlockingQueueMain" />
-      <item index="5" class="java.lang.String" itemvalue="Application.HelloCyclicBarrier" />
-      <item index="6" class="java.lang.String" itemvalue="Application.MirrorTree" />
+      <item index="2" class="java.lang.String" itemvalue="Application.CheckReentrantLock" />
+      <item index="3" class="java.lang.String" itemvalue="Application.BlockingQueueMain" />
+      <item index="4" class="java.lang.String" itemvalue="Application.HelloCyclicBarrier" />
+      <item index="5" class="java.lang.String" itemvalue="Application.MirrorTree" />
+      <item index="6" class="java.lang.String" itemvalue="Application.IsBalancedTree" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MirrorTree" />
-        <item index="1" class="java.lang.String" itemvalue="Application.HelloCyclicBarrier" />
-        <item index="2" class="java.lang.String" itemvalue="Application.BlockingQueueMain" />
-        <item index="3" class="java.lang.String" itemvalue="Application.CheckReentrantLock" />
-        <item index="4" class="java.lang.String" itemvalue="Application.SimpleGeneric" />
+        <item index="0" class="java.lang.String" itemvalue="Application.IsBalancedTree" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MirrorTree" />
+        <item index="2" class="java.lang.String" itemvalue="Application.HelloCyclicBarrier" />
+        <item index="3" class="java.lang.String" itemvalue="Application.BlockingQueueMain" />
+        <item index="4" class="java.lang.String" itemvalue="Application.CheckReentrantLock" />
       </list>
     </recent_temporary>
   </component>
@@ -877,7 +889,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512338302288</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="MirrorTree - easier to construct a BST">
+      <created>1512376775254</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512376775254</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -904,7 +923,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23361976" sideWeight="0.4938918" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51990634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5194805" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23390558" sideWeight="0.5061082" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -931,7 +950,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24946351" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51990634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5194805" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -941,7 +960,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40495867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821724" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23361976" sideWeight="0.4938918" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23361976" sideWeight="0.4938918" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23390558" sideWeight="0.5061082" order="3" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -966,7 +985,8 @@
     <MESSAGE value="CloseableHttpClient" />
     <MESSAGE value="HelloRolling - Play with log4j2 rolling" />
     <MESSAGE value="MirrorTree" />
-    <option name="LAST_COMMIT_MESSAGE" value="MirrorTree" />
+    <MESSAGE value="MirrorTree - easier to construct a BST" />
+    <option name="LAST_COMMIT_MESSAGE" value="MirrorTree - easier to construct a BST" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -996,7 +1016,7 @@
           <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1008,6 +1028,20 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>&quot;5&quot;.equals(node.key.toString())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>node.key.equals(&quot;5&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/interview/concurrent/Handler.java" />
@@ -1336,14 +1370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/IsBalancedTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/IsBalancedBST.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
@@ -1373,8 +1399,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/MirrorTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="-96">
+          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interview/trees/IsBalancedTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="53" column="15" lean-forward="false" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
           <folding />
         </state>
       </provider>
