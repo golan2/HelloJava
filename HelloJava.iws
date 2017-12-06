@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list id="24c7e296-085a-4dbb-828c-4e3644da625f" name="Play with LWCrypto" comment="" />
     <list default="true" id="f7cec380-fdf0-47c2-b9f5-25396d7fb40d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/interview/recursion/permutations/SumCoins.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/interview/recursion/permutations/RobotAndMatrix.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/interview/recursion/permutations/SumsetNthElement.java" />
       <change beforePath="$PROJECT_DIR$/HelloJava.iws" afterPath="$PROJECT_DIR$/HelloJava.iws" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interview/recursion/permutations/Permutations.java" afterPath="$PROJECT_DIR$/src/main/java/interview/recursion/permutations/Permutations.java" />
     </list>
     <ignored path="HelloJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +29,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="SumCoins.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SumCoins.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/interview/recursion/permutations/SumCoins.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1628">
@@ -46,6 +46,32 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="RobotAndMatrix.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/interview/recursion/permutations/RobotAndMatrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="14" column="55" lean-forward="false" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1221#1222#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
+                <element signature="e#2439#2440#0" expanded="true" />
+                <element signature="e#2485#2486#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SumsetNthElement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/interview/recursion/permutations/SumsetNthElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -58,7 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>file</find>
       <find>pattern</find>
       <find>juni</find>
       <find>print</find>
@@ -88,6 +113,7 @@
       <find>.collect(</find>
       <find>tabify</find>
       <find>mylog</find>
+      <find>key.has</find>
     </findStrings>
     <replaceStrings>
       <replace>Logger.</replace>
@@ -160,6 +186,8 @@
         <option value="$PROJECT_DIR$/src/main/java/interview/trees/IsBalancedTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/interview/recursion/permutations/Permutations.java" />
         <option value="$PROJECT_DIR$/src/main/java/interview/recursion/permutations/SumCoins.java" />
+        <option value="$PROJECT_DIR$/src/main/java/interview/recursion/permutations/SumsetNthElement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/interview/recursion/permutations/RobotAndMatrix.java" />
       </list>
     </option>
   </component>
@@ -368,7 +396,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SumCoins">
+  <component name="RunManager" selected="Application.RobotAndMatrix">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -376,25 +404,6 @@
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-    </configuration>
-    <configuration name="HelloCyclicBarrier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="multithreading.concurrent.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="multithreading.concurrent.HelloCyclicBarrier" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="HelloJava" />
-      <envs />
     </configuration>
     <configuration name="HelloRolling" type="Application" factoryName="Application" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -434,25 +443,6 @@
       <module name="HelloJava" />
       <envs />
     </configuration>
-    <configuration name="MirrorTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="interview.trees.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="interview.trees.MirrorTree" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="HelloJava" />
-      <envs />
-    </configuration>
     <configuration name="Permutations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -472,6 +462,25 @@
       <module name="HelloJava" />
       <envs />
     </configuration>
+    <configuration name="RobotAndMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="interview.recursion.permutations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="interview.recursion.permutations.RobotAndMatrix" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="HelloJava" />
+      <envs />
+    </configuration>
     <configuration name="SumCoins" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -480,6 +489,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="interview.recursion.permutations.SumCoins" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="HelloJava" />
+      <envs />
+    </configuration>
+    <configuration name="SumsetNthElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="interview.recursion.permutations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="interview.recursion.permutations.SumsetNthElement" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -843,19 +871,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Application.HelloRolling" />
       <item index="1" class="java.lang.String" itemvalue="Remote.mvnDebug" />
-      <item index="2" class="java.lang.String" itemvalue="Application.HelloCyclicBarrier" />
-      <item index="3" class="java.lang.String" itemvalue="Application.MirrorTree" />
-      <item index="4" class="java.lang.String" itemvalue="Application.IsBalancedTree" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Permutations" />
-      <item index="6" class="java.lang.String" itemvalue="Application.SumCoins" />
+      <item index="2" class="java.lang.String" itemvalue="Application.IsBalancedTree" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Permutations" />
+      <item index="4" class="java.lang.String" itemvalue="Application.SumCoins" />
+      <item index="5" class="java.lang.String" itemvalue="Application.SumsetNthElement" />
+      <item index="6" class="java.lang.String" itemvalue="Application.RobotAndMatrix" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SumCoins" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Permutations" />
-        <item index="2" class="java.lang.String" itemvalue="Application.IsBalancedTree" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MirrorTree" />
-        <item index="4" class="java.lang.String" itemvalue="Application.HelloCyclicBarrier" />
+        <item index="0" class="java.lang.String" itemvalue="Application.RobotAndMatrix" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SumsetNthElement" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SumCoins" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Permutations" />
+        <item index="4" class="java.lang.String" itemvalue="Application.IsBalancedTree" />
       </list>
     </recent_temporary>
   </component>
@@ -906,7 +934,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512386035046</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="SumCoins - solved">
+      <created>1512407931195</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1512407931195</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -930,12 +965,12 @@
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32821724" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23361976" sideWeight="0.4938918" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23361976" sideWeight="0.4938918" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24919441" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5194805" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39551356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23390558" sideWeight="0.5061082" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -960,7 +995,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24919441" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5194805" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39551356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -970,7 +1005,7 @@
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40495867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821724" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23361976" sideWeight="0.4938918" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23361976" sideWeight="0.4938918" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23390558" sideWeight="0.5061082" order="3" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -998,7 +1033,8 @@
     <MESSAGE value="MirrorTree - easier to construct a BST" />
     <MESSAGE value="IsBalancedTree - the solution with min_max_depth" />
     <MESSAGE value="MirrorTree - switch to use BST because it is more coherent to understand how the tree looks like when you read the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="MirrorTree - switch to use BST because it is more coherent to understand how the tree looks like when you read the code" />
+    <MESSAGE value="SumCoins - solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="SumCoins - solved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1027,13 +1063,19 @@
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/interview/recursion/permutations/SumsetNthElement.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="root.key" language="JAVA" custom="" />
-        <watch expression="counter.get()" language="JAVA" custom="" />
+        <watch expression="a[i]" />
+        <watch expression="b[j]" />
       </configuration>
     </watches-manager>
   </component>
@@ -1054,15 +1096,20 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>a[i]+b[j]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>a[i]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/generics/SimpleGeneric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/interview/BlockingQueue/MBQ.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/interview/multithreading/CheckReentrantLock.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1383,30 +1430,8 @@
         <state relative-caret-position="158">
           <caret line="57" column="26" lean-forward="false" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
           <folding>
-            <element signature="e#1410#1411#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/classpath/jdk/1.8.0_111/win64/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="304" column="29" lean-forward="false" selection-start-line="304" selection-start-column="29" selection-end-line="304" selection-end-column="29" />
-          <folding>
-            <element signature="e#19296#19297#0" expanded="true" />
-            <element signature="e#19379#19380#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/classpath/jdk/1.8.0_111/win64/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="147" column="19" lean-forward="false" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
-          <folding>
-            <element signature="e#5748#5749#0" expanded="true" />
-            <element signature="e#5784#5785#0" expanded="true" />
+            <element signature="e#1410#1411#0" expanded="false" />
+            <element signature="e#1471#1472#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1447,10 +1472,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/classpath/jdk/1.8.0_111/win64/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="109" column="24" lean-forward="true" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/classpath/jdk/1.8.0_111/win64/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="513" column="23" lean-forward="false" selection-start-line="513" selection-start-column="23" selection-end-line="513" selection-end-column="23" />
+          <folding>
+            <element signature="e#24298#24299#0" expanded="false" />
+            <element signature="e#24363#24364#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/interview/recursion/permutations/SumsetNthElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="528">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1466,6 +1510,20 @@
             <element signature="e#2311#2312#0" expanded="true" />
             <element signature="e#2646#2647#0" expanded="true" />
             <element signature="e#2696#2697#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interview/recursion/permutations/RobotAndMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="55" lean-forward="false" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#2439#2440#0" expanded="true" />
+            <element signature="e#2485#2486#0" expanded="true" />
           </folding>
         </state>
       </provider>
