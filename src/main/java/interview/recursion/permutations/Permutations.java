@@ -2,33 +2,22 @@ package interview.recursion.permutations;
 
 import golan.utils.MyLog;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+import java.util.stream.Collectors;
 
-/**
- * <pre>
- * <B>Copyright:</B>   HP Software IL
- * <B>Owner:</B>       <a href="mailto:izik.golan@hp.com">Izik Golan</a>
- * <B>Creation:</B>    07/06/2015 00:26
- * <B>Since:</B>       BSM 9.21
- * <B>Description:</B>
- *
- * </pre>
- */
 public class Permutations {
 
   private static final boolean DEBUG = false;
 
   public static void main(String[] args) {
-    //List<Integer> list = new ArrayList<>();
-    //list.add(1);
-    //list.add(2);
-    //list.add(3);
-    //System.out.println(allPermutations(list));
-
     Integer[] arr = { 1, 2, 3 , 4};
-    System.out.println(Arrays.deepToString(allPermutations(arr)));
+    final Integer[][] allPermutations = allPermutations(arr);
+    System.out.println(
+            "All Permutations: \n" +
+            Arrays.stream(allPermutations)
+                    .map(Arrays::toString)
+                    .collect(Collectors.joining("\n"))
+    );
   }
 
   public static Integer[][] allPermutations(Integer[] arr) {
@@ -43,7 +32,6 @@ public class Permutations {
   }
 
   private static Integer[][] allPermutations(Integer[] arr, int beginIndex, int size) {
-
 
     if (DEBUG) {
       MyLog.log(MyLog.LogLevel.DEBUG, tabify(beginIndex) + "allPermutations - BEGIN - beginIndex=["+beginIndex+"] size=["+size+"] arr=["+Arrays.toString(arr)+"]");
@@ -67,7 +55,7 @@ public class Permutations {
     // whenever we say "fist" we mean the one on the arr[beginIndex]
     // because every recursive call needs a smaller array
     // but we don't copy to new array.
-    // instead, we beginIndex to represent where the small array begins
+    // instead, we use beginIndex to represent where the small array begins
 
     for (int i = beginIndex; i < arr.length; i++) {
 
