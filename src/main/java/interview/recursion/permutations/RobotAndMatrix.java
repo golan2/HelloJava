@@ -12,7 +12,7 @@ public class RobotAndMatrix {
 
         System.out.println(binaryTreeToJsonString(root));
 
-        binaryTreeByLevels(root)        -- contine here
+
 
     }
 
@@ -28,7 +28,7 @@ public class RobotAndMatrix {
                 buf.append("\n");
                 depth++;
             }
-            queue.enqueue(new NodeDepth(nd.node.left));
+            queue.enqueue(new NodeDepth(nd.node.left, nd.depth+1));
 
         }
     }
