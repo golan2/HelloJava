@@ -11,8 +11,8 @@ import java.util.Map;
 
 /**
  * <pre>
- * <B>Copyright:</B>   HP Software IL
- * <B>Owner:</B>       <a href="mailto:izik.golan@hp.com">Izik Golan</a>
+ * <B>Copyright:</B>   Izik Golan
+ * <B>Owner:</B>       <a href="mailto:golan2@hotmail.com">Izik Golan</a>
  * <B>Creation:</B>    14/05/2015 23:01
  * <B>Since:</B>       Neptune 1.0
  * <B>Description:</B>

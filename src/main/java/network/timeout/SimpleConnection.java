@@ -9,8 +9,8 @@ import java.net.URLConnection;
 
 /**
  * <pre>
- * <B>Copyright:</B>   HP Software IL
- * <B>Owner:</B>       <a href="mailto:izik.golan@hp.com">Izik Golan</a>
+ * <B>Copyright:</B>   Izik Golan
+ * <B>Owner:</B>       <a href="mailto:golan2@hotmail.com">Izik Golan</a>
  * <B>Creation:</B>    04/01/2015 19:40
  * <B>Since:</B>       BSM 9.21
  * <B>Description:</B>

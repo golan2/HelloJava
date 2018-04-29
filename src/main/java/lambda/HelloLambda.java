@@ -8,8 +8,8 @@ import java.util.function.Predicate;
 
 /**
  * <pre>
- * <B>Copyright:</B>   HP Software IL
- * <B>Owner:</B>       <a href="mailto:izik.golan@hp.com">Izik Golan</a>
+ * <B>Copyright:</B>   Izik Golan
+ * <B>Owner:</B>       <a href="mailto:golan2@hotmail.com">Izik Golan</a>
  * <B>Creation:</B>    02/05/2014 00:28
  * <B>Since:</B>       BSM 9.21
  * <B>Description:</B>
