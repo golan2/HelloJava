@@ -84,17 +84,11 @@
         </dependency>
 
 
-
-
-
-
-
-
-
     </dependencies>
+
     <build>
-        <outputDirectory>C:\intellij_out</outputDirectory>
-        <testOutputDirectory>C:\intellij_out</testOutputDirectory>
+        <!--<outputDirectory>./intellij_out</outputDirectory>-->
+        <!--<testOutputDirectory>./intellij_out</testOutputDirectory>-->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
