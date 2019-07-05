@@ -1,5 +1,6 @@
 package interview.lists;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -44,7 +45,7 @@ public class Main {
   }
 
   private static void singletonList() {
-    final List<String> list = Collections.singletonList("A");
+    final List<String> list = new ArrayList<>(Collections.singletonList("A"));
     list.add("B");
     System.out.println(String.join(",", list));
   }
