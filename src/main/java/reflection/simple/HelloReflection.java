@@ -9,18 +9,20 @@ public class HelloReflection {
         System.out.println("1");
         Reffi.class.getDeclaredMethod("foo").invoke(new Reffi());
         System.out.println("2");
+        //noinspection ConfusingArgumentToVarargsMethod
         Reffi.class.getDeclaredMethod("foo").invoke(new Reffi(), null);
         System.out.println("3");
         Reffi.class.getDeclaredMethod("foo", Integer.TYPE).invoke(new Reffi(), 3);
     }
 
 
+    @SuppressWarnings("unused")
     private static class Reffi {
-        public void foo() {
+        void foo() {
             System.out.println("foo()");
         }
 
-        public void foo(int a) {
+        void foo(int a) {
             System.out.println("foo("+a+")");
         }
 
