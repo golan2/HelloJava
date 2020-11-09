@@ -9,6 +9,10 @@ target/
 .idea/
 .shelf/
 
+.gradle/
+build/
+out/
+
 *.log
 *.war
 *.nar
