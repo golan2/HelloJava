@@ -1,8 +1,8 @@
 package strings;
 
-import com.sun.jndi.toolkit.url.Uri;
-
 import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 
 /**
@@ -17,11 +17,11 @@ import java.net.URL;
  */
 public class UrlManipulations {
 
-  public static void main(String[] args) throws MalformedURLException {
+  public static void main(String[] args) throws URISyntaxException {
     String url = "http://myd-vm14696.hpswlabs.adapps.hp.com:443/topaz/TopazSiteServlet?createSession=true&userlogin=admin&userpassword=admin&requestType=login";
     System.out.println(getRootUrlFromString(url));
 
-    Uri uri1 = new Uri(url);
+    URI uri1 = new URI(url);
     System.out.println(uri1.getPath());
 
     String uri = "/";
