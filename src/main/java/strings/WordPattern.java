@@ -3,9 +3,7 @@ package strings;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -49,7 +47,7 @@ public class WordPattern {
     }
 
     private static boolean wordPattern(String pattern, Iterator<String> words) {
-        final BijectionMap map = new BijectionMap();
+        final BijectionMap<String, String> map = new BijectionMap<>();
 
         try {
             for (int i = 0; i < pattern.length(); i++) {
@@ -89,34 +87,6 @@ public class WordPattern {
             return true;
         } finally {
             log.debug("map: {}", map);
-        }
-    }
-
-    private static class BijectionMap {
-        final Map<String, String> map = new HashMap<>();
-        final Map<String, String> inverseMap = new HashMap<>();
-
-
-        public void put(String key, String value) {
-            map.put(key, value);
-            inverseMap.put(value, key);
-        }
-
-        public String get(String key) {
-            return map.get(key);
-        }
-
-        public boolean containsValue(String value) {
-            return inverseMap.containsKey(value);
-        }
-
-        public String getKey(String value) {
-            return inverseMap.get(value);
-        }
-
-        @Override
-        public String toString() {
-            return String.valueOf(map);
         }
     }
 
