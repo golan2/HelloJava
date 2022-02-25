@@ -11,6 +11,7 @@ import java.util.Set;
 public class Graph<T> {
     private final Map<T, Vertex<T>> vertices = new HashMap<>();     //map will easily find a vertex given its value
 
+    @SuppressWarnings("UnusedReturnValue")
     public Vertex<T> addV(T t) {
         final Vertex<T> v = new Vertex<>(t);
         vertices.put(t, v);
