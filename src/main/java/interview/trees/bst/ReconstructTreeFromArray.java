@@ -1,4 +1,4 @@
-package interview.trees;
+package interview.trees.bst;
 
 import interview.recursion.permutations.Permutations;
 

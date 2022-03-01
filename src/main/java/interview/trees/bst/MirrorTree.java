@@ -1,6 +1,6 @@
-package interview.trees;
+package interview.trees.bst;
 
-import interview.trees.BST.Node;
+import interview.trees.bst.BST.Node;
 
 public class MirrorTree {
 

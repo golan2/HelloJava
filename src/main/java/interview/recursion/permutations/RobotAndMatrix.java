@@ -1,7 +1,7 @@
 package interview.recursion.permutations;
 
 import com.google.gson.Gson;
-import interview.trees.Queue;
+import interview.trees.bst.Queue;
 
 public class RobotAndMatrix {
     public static void main(String[] args) {

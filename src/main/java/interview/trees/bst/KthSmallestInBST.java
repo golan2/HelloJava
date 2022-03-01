@@ -1,4 +1,4 @@
-package interview.trees;
+package interview.trees.bst;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
