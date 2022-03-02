@@ -1,4 +1,4 @@
-package interview.numbers;
+package interview.leetcode.numbers;
 
 import java.util.Arrays;
 

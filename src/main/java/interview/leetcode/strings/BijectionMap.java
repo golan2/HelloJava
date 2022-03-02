@@ -1,4 +1,4 @@
-package strings;
+package interview.leetcode.strings;
 
 import lombok.extern.slf4j.Slf4j;
 

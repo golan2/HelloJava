@@ -1,4 +1,4 @@
-package interview.trees.dictionary;
+package interview.leetcode.dictionary;
 
 import java.util.Collection;
 import java.util.HashMap;

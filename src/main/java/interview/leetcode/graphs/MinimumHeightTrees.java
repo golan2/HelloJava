@@ -1,4 +1,4 @@
-package interview.graphs;
+package interview.leetcode.graphs;
 
 import lombok.EqualsAndHashCode;
 

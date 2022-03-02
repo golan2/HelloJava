@@ -1,4 +1,4 @@
-package interview.trees.bst.iterator;
+package interview.leetcode.bst.iterator;
 
 public class TreeNode {
     int val;

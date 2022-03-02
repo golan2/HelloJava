@@ -1,4 +1,4 @@
-package interview.design.simple;
+package interview.leetcode.design.simple;
 
 import java.util.Iterator;
 import java.util.LinkedHashMap;

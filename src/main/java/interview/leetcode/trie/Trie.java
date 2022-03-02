@@ -1,4 +1,4 @@
-package interview.trees.trie;
+package interview.leetcode.trie;
 
 import java.util.ArrayList;
 import java.util.HashMap;

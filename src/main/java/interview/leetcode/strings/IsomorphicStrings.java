@@ -1,4 +1,4 @@
-package strings;
+package interview.leetcode.strings;
 
 /**
  * https://leetcode.com/problems/isomorphic-strings/

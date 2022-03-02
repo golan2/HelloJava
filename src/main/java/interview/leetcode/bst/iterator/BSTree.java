@@ -1,4 +1,4 @@
-package interview.trees.bst.iterator;
+package interview.leetcode.bst.iterator;
 
 import java.util.LinkedList;
 import java.util.Queue;
