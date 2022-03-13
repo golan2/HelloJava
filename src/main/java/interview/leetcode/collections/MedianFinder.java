@@ -2,6 +2,7 @@ package interview.leetcode.collections;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
+import java.util.Queue;
 
 /**
  * https://leetcode.com/problems/find-median-from-data-stream/
@@ -18,8 +19,8 @@ import java.util.PriorityQueue;
  *
  */
 public class MedianFinder {
-    private final PriorityQueue<Integer> min = new PriorityQueue<>();
-    private final PriorityQueue<Integer> max = new PriorityQueue<>(Comparator.reverseOrder());
+    private final Queue<Integer> min = new PriorityQueue<>();
+    private final Queue<Integer> max = new PriorityQueue<>(Comparator.reverseOrder());
 
     public void addNum(int num) {
         if (num > findMedian()) {
