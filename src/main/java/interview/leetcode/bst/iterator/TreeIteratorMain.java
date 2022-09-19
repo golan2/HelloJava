@@ -1,5 +1,8 @@
 package interview.leetcode.bst.iterator;
 
+import interview.leetcode.bst.common.BSTree;
+import interview.leetcode.bst.common.TreeNode;
+
 import java.util.stream.IntStream;
 
 public class TreeIteratorMain {
@@ -14,11 +17,11 @@ public class TreeIteratorMain {
         System.out.println("OK");
     }
 
-    private static void testTree(String name, BSTree tree) {
+    private static void testTree(String name, IterableTree tree) {
         System.out.println(" ------------------ ");
         System.out.println(name);
         System.out.println("-------");
-        final BSTIterator it = new BSTIterator(tree.root);
+        final BSTIterator it = new BSTIterator(tree.getRoot());
         int prev = -1;
         while (it.hasNext()) {
             Integer current = it.next();
@@ -31,8 +34,8 @@ public class TreeIteratorMain {
     /**
      * http://cs.middlesexcc.edu/~schatz/csc236/handouts/BST.delete.ex.html
      */
-    private static BSTree someTree() {
-        return new BSTree()
+    private static IterableTree someTree() {
+        return new IterableTree()
                 .add(400)
                 .add(200)
                 .add(600)
@@ -58,8 +61,8 @@ public class TreeIteratorMain {
                 .add(378);
     }
 
-    private static BSTree balanced(int size) {
-        final BSTree tree = new BSTree();
+    private static IterableTree balanced(int size) {
+        final IterableTree tree = new IterableTree();
 
         int[] arr = new int[size];
         for (int i = 0; i< size; i++) {
@@ -74,8 +77,8 @@ public class TreeIteratorMain {
     /**
      * Insery them in the sorted ascending order will end up having a linked list
      */
-    private static BSTree orderedPath(int size) {
-        final BSTree tree = new BSTree();
+    private static IterableTree orderedPath(int size) {
+        final IterableTree tree = new IterableTree();
         IntStream.range(0, size).forEach(tree::add);
         return tree;
     }
@@ -84,8 +87,8 @@ public class TreeIteratorMain {
      * This is a tree with a shape like "lightning" but with a long tail.
      * From the ROOT we have LEFT child and then a RIGHT child and then a long tail of descending numbers
      */
-    private static BSTree lightningWithLongTail(int tailLength) {
-        final BSTree tree = new BSTree()
+    private static IterableTree lightningWithLongTail(int tailLength) {
+        final IterableTree tree = new IterableTree()
                 .add(tailLength + 5)
                 .add(1)
                 .add(tailLength + 3)
@@ -96,7 +99,7 @@ public class TreeIteratorMain {
         return tree;
     }
 
-    private static void insert(BSTree tree, int[] arr, int left, int right) {
+    private static void insert(IterableTree tree, int[] arr, int left, int right) {
         if (right-left == 1) {
             tree.add(arr[left]);
             tree.add(arr[right]);
@@ -109,6 +112,21 @@ public class TreeIteratorMain {
             tree.add(arr[mid]);
             insert(tree, arr, left, mid - 1);
             insert(tree, arr, mid + 1, right);
+        }
+    }
+
+    /**
+     * The {@link BSTree} does not expose its root.
+     * We extend it and expose root using a getter, so we can iterate the tree.
+     */
+    private static class IterableTree extends BSTree {
+        @Override
+        public IterableTree add(int val) {
+            return (IterableTree) super.add(val);
+        }
+
+        TreeNode getRoot() {
+            return root;
         }
     }
 }

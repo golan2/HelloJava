@@ -1,11 +1,11 @@
-package interview.leetcode.bst.iterator;
+package interview.leetcode.bst.common;
 
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.function.Consumer;
 
 public class BSTree {
-    TreeNode root;
+    protected TreeNode root;
 
     public BSTree add(int val) {
         if (root == null) {

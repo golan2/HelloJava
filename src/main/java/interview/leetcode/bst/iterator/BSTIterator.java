@@ -1,5 +1,7 @@
 package interview.leetcode.bst.iterator;
 
+import interview.leetcode.bst.common.TreeNode;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -36,9 +38,9 @@ public class BSTIterator implements Iterator<Integer> {
 
     public BSTIterator(TreeNode root) {
         TreeNode node = root;
-        while (node.left != null) {
-            nextHop.put(node.left, node);
-            node = node.left;
+        while (node.getLeft() != null) {
+            nextHop.put(node.getLeft(), node);
+            node = node.getLeft();
         }
         current = new TreeNode(-1);
         nextHop.put(current, node);
@@ -47,31 +49,31 @@ public class BSTIterator implements Iterator<Integer> {
 
     @Override
     public Integer next() {
-        if (current.right == null) {
+        if (current.getRight() == null) {
             final TreeNode next = nextHop.get(current);
             if (next == null) throw new NoSuchElementException();
             nextHop.remove(current);
             current = next;
         }
         else {
-            nextHop.put(current.right, nextHop.get(current));
+            nextHop.put(current.getRight(), nextHop.get(current));
             nextHop.remove(current);
-            current = findMinimum(current.right);
+            current = findMinimum(current.getRight());
         }
-        return current.val;
+        return current.getVal();
     }
 
     private TreeNode findMinimum(TreeNode node) {
-        while (node.left != null) {
-            nextHop.put(node.left, node);
-            node = node.left;
+        while (node.getLeft() != null) {
+            nextHop.put(node.getLeft(), node);
+            node = node.getLeft();
         }
         return node;
     }
 
     @Override
     public boolean hasNext() {
-        if (current.right == null) {
+        if (current.getRight() == null) {
             return nextHop.get(current) != null;
         }
         return true;
