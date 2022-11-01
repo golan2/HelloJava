@@ -70,7 +70,7 @@ public class ReverseNodesInGroups {
         System.out.println();
     }
 
-    class Solution {
+    static class Solution {
         public ListNode reverseKGroup(ListNode head, int k) {
             ListNode resultBegin = null;
             ListNode resultEnd = null;
@@ -123,25 +123,6 @@ public class ReverseNodesInGroups {
         }
 
     }
-
-    @SuppressWarnings("unused")
-    static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-
-        public String toString() { return ""+val; }
-    }
-
-
-
-
-
-
-
-
 
 
 }
