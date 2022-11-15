@@ -2,8 +2,6 @@ package interview.leetcode.arrays;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.Date;
-
 /**
  * https://leetcode.com/problems/median-of-two-sorted-arrays/
  */
@@ -11,26 +9,45 @@ import java.util.Date;
 public class MedianTwoSortedArrays {
 
     public static void main(String[] args) {
-        System.out.println(new Date());
+        System.out.println(
+                new MedianTwoSortedArrays().findMedianSortedArrays(new int[]{1,2,3,4,109,110,111}, new int[]{5,6,7})
+
+                //-1 1 2 3
+
+                //  1 2 3 4           9 10 11
+                //           5 6 7
+        );
+
     }
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        log.debug("nums1 = {}", nums1);
-        log.debug("nums2 = {}", nums2);
+        // log.debug("nums1 = {}", nums1);
+        // log.debug("nums2 = {}", nums2);
         final double median;
+
+        if (nums1.length == 0  &&  nums2.length == 0) {
+            return Double.NaN;
+        }
+        if (nums1.length == 0) {
+            return median(nums2, 0, nums2.length - 1);
+        }
+        if (nums2.length == 0) {
+            return median(nums1, 0, nums1.length - 1);
+        }
+
         if (nums1.length > nums2.length) {
             median = find(nums1, 0, nums1.length - 1, nums2, 0, nums2.length - 1);
         }
         else {
             median = find(nums2, 0, nums2.length - 1, nums1, 0, nums1.length - 1);
         }
-        log.debug("MEDIAN: {}", median);
+        // log.debug("MEDIAN: {}", median);
         return median;
     }
 
     private double find(int[] a, int aleft, int aright, int[] b, int bleft, int bright) {
         if (a.length < b.length) throw new IllegalArgumentException("The [a] should be the larger array ");
-        log.debug("[find] a = ({} , {})   b = ({} , {})", a[aleft], a[aright], b[bleft], b[bright]);
+        log.info("[find] a = ({} , {})   b = ({} , {})", a[aleft], a[aright], b[bleft], b[bright]);
 
         //termination condition - the shorter array (or both) is over (i.e. has a single item)
         if (aleft == aright  &&  bleft == bright) {
@@ -46,17 +63,19 @@ public class MedianTwoSortedArrays {
         double amedian = median(a, aleft, aright);
         double bmedian = median(b, bleft, bright);
 
+        log.info("amedian={}   bmedian={}", amedian, bmedian);
+
         final int howMuchToCut = (bright - bleft + 1) / 2;
         if (amedian < bmedian) {
             //a is the "left" array, so we cut off its left-side
             //b is the "right" one, so we cut off its right-side
             //how much to cut? half of the smaller array
-            log.debug("howMuchToCut={}", howMuchToCut);
+            log.info("howMuchToCut={}", howMuchToCut);
             return find(a, aleft + howMuchToCut, aright, b, bleft, bright - howMuchToCut);
         }
         else if (amedian > bmedian) {
             //b is the "left" array and a is the "right" one
-            log.debug("howMuchToCut={}", howMuchToCut);
+            log.info("howMuchToCut={}", howMuchToCut);
             return find(a, aleft, aright - howMuchToCut, b, bleft + howMuchToCut, bright);
         }
         else {
@@ -72,11 +91,11 @@ public class MedianTwoSortedArrays {
      * The logic below is fairly simple, but it depends on if the array is of even or odd length.
      */
     private double medianPlusOne(int[] arr, int left, int right, int additional) {
-        log.debug("[medianPlusOne] arr = ({} , {}) / {}", arr[left], arr[right], additional);
+        // log.debug("[medianPlusOne] arr = ({} , {}) / {}", arr[left], arr[right], additional);
         int len = right - left + 1;
 
         if (len % 2 == 0) {
-            //the median of the array is the average of these 2 candidate
+            //the median of the array is the average of these 2 candidates
             //adding another number will shift it left or right
             //or... it may be exactly between them two.
             final int leftCandidate = arr[left + len / 2 - 1];
