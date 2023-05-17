@@ -2,6 +2,8 @@ package interview.leetcode.linkedlist;
 
 import java.util.Arrays;
 
+import static interview.leetcode.linkedlist.ListNode.buildList;
+
 /**
  * https://leetcode.com/problems/merge-k-sorted-lists/
  *
@@ -94,14 +96,6 @@ public class MergeSortedLists {
 
 
         System.out.println(Arrays.toString(lists));
-    }
-
-    private static ListNode buildList(int[] arr) {
-        ListNode root = new ListNode(arr[arr.length-1]);
-        for (int i = arr.length-2; i >=0 ; i--) {
-            root = new ListNode(arr[i], root);
-        }
-        return root;
     }
 
     private static void print(ListNode root) {

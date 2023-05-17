@@ -1,6 +1,8 @@
 package interview.leetcode.linkedlist;
 
 
+import static interview.leetcode.linkedlist.ListNode.printList;
+
 /**
  * https://leetcode.com/problems/reverse-nodes-in-k-group
  *
@@ -61,14 +63,6 @@ public class ReverseNodesInGroups {
 
     }
 
-
-    private void printList(ListNode root) {
-        while (root != null) {
-            System.out.print(root + ", ");
-            root = root.next;
-        }
-        System.out.println();
-    }
 
     static class Solution {
         public ListNode reverseKGroup(ListNode head, int k) {

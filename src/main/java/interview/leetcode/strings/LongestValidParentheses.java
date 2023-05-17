@@ -1,5 +1,10 @@
 package interview.leetcode.strings;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * https://leetcode.com/problems/longest-valid-parentheses/
  *
@@ -7,37 +12,43 @@ package interview.leetcode.strings;
  */
 @SuppressWarnings("JavadocLinkAsPlainText")
 public class LongestValidParentheses {
+    private final Deque<Integer> stack = new ArrayDeque<>();
+    private final Map<Integer, Integer> sequence = new HashMap<>();
+
     public static void main(String[] args) {
         final LongestValidParentheses a = new LongestValidParentheses();
         System.out.println(a.longestValidParentheses("( (()) ())))))) ((()))((()))((()))  "));
         System.out.println(a.longestValidParentheses("()(()"));
         System.out.println(a.longestValidParentheses("(()"));
     }
-
+// (()()(()())
     public int longestValidParentheses(String s) {
         int max = 0;
-        int openCount = 0;
-        int length = 0;
+
         for (int i = 0; i < s.length(); i++) {
             final char c = s.charAt(i);
             if (c == '(') {
-                openCount++;
+                stack.push(i);
             }
             else if (c == ')') {
-                if (openCount > 0) {
-                    openCount--;
-                    length++;
+                if (stack.isEmpty()) {
+                    throw new RuntimeException("A");
                 }
                 else {
-                    //this character breaks the sequence; whatever length of valid sequence we've collected so far is the length
-                    if (length > max) {
-                        max = length;
-                        length = 0;
+                    final Integer index = stack.pop();
+                    int current = (i - index + 1);
+                    final Integer seq = sequence.get(index - 1);
+                    if (seq != null) {
+                        current += seq;
                     }
+                    if (current > max) {
+                        max = current;
+                    }
+                    sequence.put(i, current);
                 }
             }
         }
 
-        return Math.max(length, max) * 2;
+        return -1 ;//Math.max(length, max) * 2;
     }
 }
