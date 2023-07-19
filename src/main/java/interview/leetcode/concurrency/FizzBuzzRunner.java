@@ -77,6 +77,9 @@ public class FizzBuzzRunner {
     private final int n;
     private static final int TIMES = 50;
 
+    /**
+     * Run the {@link #go()} methods several times (with different values of "n")
+     */
     public static void main(String[] args) {
         for (int i = 1; i <= TIMES; i++) {
             System.out.println(new FizzBuzzRunner(i).go());
