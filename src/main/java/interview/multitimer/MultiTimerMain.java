@@ -18,20 +18,20 @@ public class MultiTimerMain {
         Task t2 = new LogOnlyTask(2);
         Task t3 = new LogOnlyTask(3);
 
-        Logger.log("========================================");
-        Logger.log("StaticTimer");
-        Logger.log("BEFORE");
-
-        StaticTimer.execTask(t2, 3000);
-        StaticTimer.execTask(t3, 2000);
-        StaticTimer.execTask(t1, 2500);
-
-        Logger.log("AFTER");
-
-        Logger.log("Waiting...");
-        Thread.sleep(5000);
-
-        Logger.log("FINISHED");
+//        Logger.log("========================================");
+//        Logger.log("StaticTimer");
+//        Logger.log("BEFORE");
+//
+//        StaticTimer.execTask(t2, 2000);
+//        StaticTimer.execTask(t3, 2500);
+//        StaticTimer.execTask(t1, 1500);
+//
+//        Logger.log("AFTER");
+//
+//        Logger.log("Waiting...");
+//        Thread.sleep(5000);
+//
+//        Logger.log("FINISHED");
 
 
         Logger.log("========================================");
@@ -39,9 +39,9 @@ public class MultiTimerMain {
         Logger.log("BEFORE");
 
         ListMultiTimer multiTimer = new ListMultiTimer();
-        multiTimer.addTask(t2, 3000);
-        multiTimer.addTask(t3, 2000);
-        multiTimer.addTask(t1, 2500);
+        multiTimer.addTask(t3, 2500);
+        multiTimer.addTask(t2, 2000);
+        multiTimer.addTask(t1, 1500);
 
         Logger.log("AFTER");
 
