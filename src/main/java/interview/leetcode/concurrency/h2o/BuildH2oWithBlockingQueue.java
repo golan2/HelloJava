@@ -1,4 +1,4 @@
-package interview.multithreading.h2o;
+package interview.leetcode.concurrency.h2o;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;

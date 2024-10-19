@@ -1,4 +1,4 @@
-package interview.multithreading.h2o;
+package interview.leetcode.concurrency.h2o;
 
 public interface BuildH2o {
     void hydrogen(Runnable releaseHydrogen) throws InterruptedException;

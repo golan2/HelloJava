@@ -1,4 +1,4 @@
-package interview.multithreading.h2o;
+package interview.leetcode.concurrency.h2o;
 
 /**
  * Can work with "the constraint" or without
