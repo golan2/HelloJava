@@ -1,0 +1,1 @@
+All the files here were moved to: git@github.com:golan2/java-interview-questions.git

@@ -149,8 +149,6 @@
     </dependencies>
 
     <build>
-        <!--<outputDirectory>./intellij_out</outputDirectory>-->
-        <!--<testOutputDirectory>./intellij_out</testOutputDirectory>-->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
